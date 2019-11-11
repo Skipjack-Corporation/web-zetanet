@@ -1,0 +1,198 @@
+@import '../../../common/lib/common.scss';
+
+.ico-trackers.page {
+    background-color: #fff;
+    color: $color-1;
+    min-height: auto;
+    padding: 120px 0 100px;
+}
+
+.ico-trackers .title {
+    display: block;
+    width: $body-max-width;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.ico-trackers .title .line-1,
+.ico-trackers .title .line-2 {
+    text-transform: uppercase;
+    font-size: 55px;
+    line-height: 60px;
+}
+.ico-trackers .title .line-1 {
+    font-family: lato-regular;
+}
+
+.ico-trackers .title .line-2 {
+    font-family: lato-light;
+}
+.swiper-pagination-bullet-active {
+    background: #00c2ff;
+}
+.ico-trackers .title .line-1{
+    color:$color-2;
+}
+.ico-trackers .title .line-2 {
+    color: #00c2ff;
+}
+
+.ico-trackers .container {
+    position: relative;
+    max-width: 80vw;
+    max-height: 36vh;
+    margin: 30px auto 0;
+}
+
+.ico-trackers .list {
+    display: inline-block;
+    max-width: 100vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.ico-trackers .item-container {
+    display: inline-block;
+}
+
+.ico-trackers .item-container img {
+    width: 10vw;
+}
+
+.ico-trackers .item-container img:hover {
+    width: 25vh;
+}
+
+.ico-trackers .scroll {
+    position: absolute;
+    display: inline-block;
+    min-width: 10vw;
+    min-height: 18vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    box-sizing: border-box;
+}
+
+.ico-trackers .scroll.left {
+    left: 0vw;
+}
+
+.ico-trackers .scroll.right {
+    right: 0vw;
+}
+.ico-trackers .swiper-slide {
+    flex-shrink: unset;
+    transition: transform .2s;
+    cursor: pointer;
+    width: auto !important;
+}
+
+.ico-trackers .swiper-slide  img {   
+    height: 100px;
+}
+.ico-trackers .swiper-container-android .swiper-slide, .swiper-wrapper {
+    transform:none;
+}
+.ico-trackers .swiper-container {
+    padding: 30px 30px 70px;
+}
+
+.ico-trackers .swiper-button-prev, .ico-trackers .swiper-button-next {
+    outline:none;
+    top: 80px;
+}
+.ico-trackers .swiper-button-prev{
+    left: -50px;
+}
+.ico-trackers .swiper-button-next{
+    right: -50px;
+}
+.ico-trackers .swiper-container, .roadmap .swiper-container {
+    position: unset !important;
+}
+.swiper-slide > a:hover .hover-effect {
+    display: block;
+    margin:auto;
+}
+.swiper-slide > a:hover .non-hover {
+    display: none;
+}
+.swiper-slide>a:hover .non-hover, img.hover-effect {
+    display: none;
+}
+.swiper-button-prev {
+    background-image: url('./arrow/arrow-left.png');
+}
+.swiper-button-next {
+    background-image: url('./arrow/arrow-right.png');
+}
+@media screen and  (max-width: 1000px) {
+    
+    .ico-trackers .swiper-slide img {
+        height: 80px;
+    }
+    .swiper-button-prev {
+        left: -70px;
+    }
+    .swiper-button-next {
+        right: -70px;
+    }
+    .ico-trackers .container {
+        max-width: $mobi-max-width;
+    }
+    .ico-trackers .title .line-1, .ico-trackers .title .line-2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .ico-trackers.page {
+        min-height: auto;
+        padding: 100px 0;
+    }
+    
+}
+@media screen and  (max-width: 767px) {
+    .ico-trackers .swiper-slide {
+        margin: 0 20px !important;
+    }
+    .ico-trackers .swiper-container {
+        padding: 30px 0 55px;
+    }
+    .swiper-button-prev {
+        left: -50px;
+    }
+    .swiper-button-next {
+        right: -50px;
+    }
+    .ico-trackers .swiper-slide img {
+        height: 75px;
+    }
+    .ico-trackers .container {
+        max-height: none;
+        margin: 0 auto;
+    }
+    .swiper-slide a {
+        width: 150px;
+    }
+    .swiper-container {
+        padding: 60px 0 30px;
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev, .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        height: 40px;
+        width: 55px;    
+        top: calc(50% - 5px);
+    }
+    
+}
+
+
+@media screen and  (max-width:540px) {
+.ico-trackers .swiper-slide {
+    margin: 0 15px !important;
+}
+.ico-trackers .swiper-slide img {
+    height: 44px;
+}
+}

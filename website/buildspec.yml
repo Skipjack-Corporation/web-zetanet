@@ -1,0 +1,18 @@
+version: 0.2
+
+env:
+  variables:
+    AWS_SDK_LOAD_CONFIG: "1"
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+      python: 3.7
+  build:
+    commands:
+      - cd website
+      - npm install --save
+      - npm run build
+      - aws s3 sync build s3://zetanet-prod-site --delete
+      - aws cloudfront create-invalidation --distribution-id E3775ZGY0G1PXU --path "/*"

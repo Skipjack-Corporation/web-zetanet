@@ -1,0 +1,132 @@
+@import '../../../common/lib/common.scss';
+
+
+.tech.page {
+    height: 100vh;
+    width: 100%;
+    background: url('./tech_banner.png') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.tech .social-menu:before,
+.tech .social-menu:after, 
+.tech .menu-line:before, 
+.tech .menu-line:after,
+.tech span.line1:after, 
+.tech span.line1:before,
+.tech span.line1 span:after, 
+.tech span.line1 span:before,
+.tech span.line2:after, 
+.tech span.line2:before,
+.tech span.line2 span:after, 
+.tech span.line2 span:before,
+.tech .social-icon:before,
+.tech .social-icon:after {
+    background: #003d55;
+}
+.tech .social-icon {
+    background: url('./tech_banner.png') no-repeat;
+    background-position: 0% 50%;
+    transition: transform .2s;
+}
+.tech .social-icon .blue-icon{
+    display: block;
+}
+.tech .social-icon .white-icon{
+    display: none;
+}
+.tech.page .home-content {
+    height: 100vh;
+}
+.tech .center-content {
+    position: relative;
+    top: calc(50% - 35vh);
+    margin: 0;
+    color: #f3f4ef;
+    padding: 0 70px;
+    font-family: lato-regular;
+}
+.tech-title > span {
+    text-transform: uppercase;
+    font-size: 55px;
+    max-width: 850px;
+    display: inline-block;
+    letter-spacing: 3px;
+}
+.tech-title > p {
+    display: inline-block;
+    width: 100%;
+    font-family: raleway-regular;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+.tech-title {
+    position: relative;
+}
+.tech-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 85px;
+    height: 6px;
+    background: #00c1fe;
+    left: 0;
+}
+
+@media screen and  (max-width: 1200px) {
+    .tech-title > span {
+        font-size: 40px;
+        max-width: 650px;
+    }
+    .tech-title > p {
+        font-size: 18px;
+    }
+}
+
+@media screen and  (max-width: 1024px) {
+    .tech .center-content {
+        padding: 80px 20px 200px;
+        top: 0;
+    }
+    .tech.page {
+        height: auto;
+        min-height: auto;
+    }
+    .tech.page .home-content {
+        height: auto;
+    }
+    .tech-title > p {
+        max-width: 400px;
+    }
+    
+}
+@media screen and  (max-width: 991px) {
+    .tech-title > span {
+        font-size: 30px;
+        max-width: 550px;
+    }
+    .tech .center-content {
+        padding: 80px 50px 200px;
+        top: 0;
+    }
+}
+
+@media screen and  (max-width: 767px) {
+    .tech-title > span {
+        max-width: 400px;
+    }
+    .tech .center-content {
+        padding: 20px 50px 120px;
+    }
+}
+
+@media screen and  (max-width: 480px) {
+    .tech-title > span {
+        max-width: 300px;
+        font-size: 25px;
+    }
+    .tech-title > p {
+        max-width: 320px;
+        font-size: 15px;
+    }
+}

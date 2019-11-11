@@ -1,0 +1,109 @@
+@import '../../../common/lib/common.scss';
+
+
+.capabilities.page {
+    width: 100%;
+    height: calc(100vh - 150px);
+}
+.capabilities .cap-bg {
+    width: 100%;
+    background: url(./quantum-brain-img.png) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 150px);
+}
+.capabilities-content {
+    background: #002789;
+    width: 50%;
+    padding: 0;
+    display: inline-block;
+    margin-top: 50px;
+    z-index: 9;
+    position: relative;
+    height: calc(100vh - 150px);
+}
+.capabilities-container {
+    width: 445px;
+    margin-left: calc(100% - 520px);
+    color: #f7f7f7;
+    top: calc(50% - 200px);
+    position: relative;
+}
+.capabilities-container > p span {
+    font-family: lato-light;
+    width: 100%;
+    display: inline-block;
+}
+.capabilities-container>p:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 85px;
+    height: 6px;
+    background: #00c1fe;
+    left: 0;
+}
+.capabilities-container>p {
+    font-family: raleway-bold;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    font-size: 55px;
+    margin: 0 0 25px;
+    line-height: 60px;
+    padding-bottom: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+@media screen and (max-width: 1200px){
+    .capabilities-content {
+        width: auto;
+    }
+    .capabilities-container {
+        width: 445px;
+        padding: 0 80px;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 899px){
+    .capabilities-container {
+        width: 350px;
+        padding: 0 50px;
+    }
+    
+    .capabilities .cap-bg {
+        background: #000;
+        height: 500px;
+    }
+    .capabilities.page {
+        height: 550px;
+        min-height: auto;
+    }
+    .capabilities-content {
+        height: 500px;
+    }
+    .capabilities-container {
+        top: calc(50% - 160px);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .capabilities-content {
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
+    .capabilities .cap-bg {
+        height: auto;
+    }
+    .capabilities-container {
+        top: 0;
+        padding: 30px 15px;
+        width: calc(100% - 30px);
+    }   
+    .capabilities.page {
+        height: auto;
+    }
+    .capabilities .content-left > p {
+        margin: 0;
+        padding: 0;
+    }
+}

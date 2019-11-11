@@ -1,0 +1,129 @@
+@import '../../../common/lib/common.scss';
+
+
+.about.page {
+    background-image: url('./quantum-comp.png');
+    background-color: $background-2;
+    color: $color-1;
+    height: 820px;
+    min-height: auto;
+    width: calc(100% - 100px);
+}
+.about-content {
+    background: #002789;
+    width: 50%;
+    padding: 60px 0 80px;
+    display: inline-block;
+    margin-top:50px;
+    z-index: 9;
+    position: relative;
+}
+.about-container > p {
+    font-family: raleway-bold;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    font-size: 55px;
+    margin: 0 0 25px;
+    line-height: 60px;
+    padding-bottom: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+.about-container > p span{
+    font-family: lato-light;
+}
+.about-container .btn-blue:before {
+    background: #002789;
+    box-shadow: 10px 10px 0px 10px #002789;
+}
+.about-container .btn-blue {
+    color: $color-2;
+    background: #fff;
+    margin-top: 30px;
+}
+.about-container .btn-blue > a{
+    color: $color-2;
+}
+.about-container .btn-blue:hover > a{
+    color: #fff;
+}
+.about-container .btn-blue:after {
+    background: #002789;
+}
+.about-container .btn-blue span:after {
+    border: 1px solid #fff;
+}
+.about-container > p:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 85px;
+    height: 6px;
+    background: $blue;
+    left: 0;
+}
+.about-container {
+    width: 445px;
+    margin-left: calc(100% - 520px);
+    color: #f7f7f7;
+}
+.about .container {
+    position: relative;
+    max-width: $body-max-width;
+    margin-left: auto;
+    margin-right: auto; 
+    min-height:100vh;
+}
+.about .content {
+    width: 28vw;
+    font-family: myriadpro-light;
+    font-size: 1.7vh;    
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.content-left{
+    padding-right:20px;
+}
+.content-left {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+p.description > a {
+    color: #00c2ff;
+}  
+.content-left > p {
+    font-family: raleway-light;
+    font-size: 17px;
+    margin-bottom: 5px;
+    line-height: 23px;
+    position: relative;
+    padding-bottom: 10px;
+}
+@media screen and  (max-width: 1000px) {
+    .about .container {
+        max-width: $mobi-max-width;
+    }
+    .about .content {
+        width: auto;
+        font-size: 14px;
+        max-width: 500px;
+    }
+    .about.page, .about .container {
+        min-height:auto;
+    }
+    .about .content {
+        top: auto;
+        transform: initial;
+        padding: 100px 0;
+        position: relative;
+    }
+}
+@media screen and  (max-width: 767px) {
+.content-left > p {
+    font-size: 14px;
+    line-height: 22px;
+}
+}

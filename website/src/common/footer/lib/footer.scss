@@ -1,0 +1,42 @@
+@import '../../lib/common.scss';
+
+.footer {
+    background-color: #000;
+    color: $color-1;
+    text-align: center;
+    padding: 30px 15px;
+    box-sizing: border-box;    
+    font-family: raleway-regular;
+    font-size: 13px;
+    position: relative;
+    z-index: 99999;
+}
+.terms-condition {
+    display: inline-block;
+}
+.terms-condition > a {
+    border-left: 1px solid $blue;
+    margin: 0 0 0 10px;
+    padding-left: 10px;
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px){
+    .footer {
+        padding: 15px;
+    }
+}
+@media screen and  (max-width: 540px) {
+    .footer {
+        font-size: 12px;
+    }
+}
+@media screen and  (max-width: 480px) {
+    .terms-condition > a:first-child{
+        border:none;
+    }
+    .terms-condition {
+        margin-top: 7px;
+    }
+}

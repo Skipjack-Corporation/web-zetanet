@@ -1,0 +1,100 @@
+@import '../../../common/lib/common.scss';
+
+.team.page {
+    text-align: center;
+    padding: 100px 0;
+    background: url(./team_bg.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.team p.title {
+    color:$color-2;
+    display: inline-block;
+    margin: 0 0 40px;
+}
+.team p.title:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    width: 85px;
+    height: 6px;
+    background: #00c1fe;
+    left: calc(50% - 42.5px);
+}
+.team-content li {
+    list-style: none;
+    display: inline-block;
+    width: calc(33.33% - 40px);
+    padding: 20px 30px;
+    vertical-align: top;
+    max-width: 250px;
+}
+.team-content > ul {
+    padding: 0;
+    margin: 0;
+}
+
+span.display-img {
+    display: inline-block;
+    max-width: 250px;
+    text-align: center;
+    width: 100%;
+}
+.flip-box-back {
+    display: none;
+}
+
+.flip-box-front > a > img {
+    width: 50px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+.flip-box-front {
+    position: relative;
+}
+
+.display-img .container-img {
+    // background-image: url('./team_frame.png');    
+    width: 100%;
+    background-size: contain;
+    display: block;
+    background-repeat: no-repeat;
+    height: auto;
+    max-height: 100%;
+}
+p.display-name {
+    font-family: lato-regular;
+    margin: 10px 0 0;
+    color: #262627;
+    font-size: 20px;
+    text-align: left;
+}
+p.display-position {
+    font-family: lato-bold;
+    color: $blue;
+    margin: 0;
+    font-size: 15px;
+    text-align: left;
+}
+.team .description {
+    color: #fff;
+}
+
+span.linkedin img {
+    width: 30px;
+}
+span.linkedin > a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+p.team-title {
+    font-family: lato-regular;
+    font-size: 25px;
+    color: $color-2;
+    margin: 30px 0 10px;
+}
