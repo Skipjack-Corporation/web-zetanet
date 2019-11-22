@@ -49,7 +49,7 @@ class Team extends React.Component{
                             </div>
                             <span className='linkedin'>
                                 <p className="display-name">Paulius Stankevicius</p>
-                                <p className="display-position">EMEA CEO and Global CMO</p>
+                                <p className="display-position">Global CMO</p>
                             </span>
                         </li>
                         <li>
