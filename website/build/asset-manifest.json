@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a976d9e7.chunk.css",
+    "main.js": "/static/js/main.22889ee7.chunk.js",
+    "main.js.map": "/static/js/main.22889ee7.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.f949f7e3.js",
+    "runtime~main.js.map": "/static/js/runtime~main.f949f7e3.js.map",
+    "static/css/2.ac169b45.chunk.css": "/static/css/2.ac169b45.chunk.css",
+    "static/js/2.987ea752.chunk.js": "/static/js/2.987ea752.chunk.js",
+    "static/js/2.987ea752.chunk.js.map": "/static/js/2.987ea752.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.08de8eef7acc89a86d595f29577c7186.js": "/precache-manifest.08de8eef7acc89a86d595f29577c7186.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.ac169b45.chunk.css.map": "/static/css/2.ac169b45.chunk.css.map",
+    "static/css/main.a976d9e7.chunk.css.map": "/static/css/main.a976d9e7.chunk.css.map",
+    "static/media/tabEvents.scss": "/static/media/Raleway-Regular.9942588a.ttf",
+    "static/media/home.scss": "/static/media/world_connect.968d1c91.png",
+    "static/media/index.scss": "/static/media/adam-cg-pro.regular.c455ec93.otf",
+    "static/media/ico-trackers.scss": "/static/media/arrow-right.22544b05.png",
+    "static/media/header.scss": "/static/media/icons-arrow.0172a80e.svg",
+    "static/media/roadmap.scss": "/static/media/roadmap_img.74e91997.png",
+    "static/media/capabilities.scss": "/static/media/quantum-brain-img.28d3972f.png",
+    "static/media/about.scss": "/static/media/quantum-comp.c5fd28f2.png",
+    "static/media/team.scss": "/static/media/team_bg.7c9fa679.png"
+  }
+}

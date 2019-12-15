@@ -13,7 +13,7 @@
     height: calc(100% - 100px);
     z-index: 99999;
     top: 50px;
-    left: -100vw;
+    left: calc(-100vw  + 15px);
     -webkit-animation: slide 0.5s forwards;
     -webkit-animation-delay: 0.2s;
     animation: slide 1s forwards;
@@ -798,10 +798,6 @@ img.crowdsale-img {
         height:auto;
         overflow: unset;
     }
-    .popup-content {
-        background: rgba(0, 0, 0, 0.5);    
-        overflow: scroll;
-    }
     .popup-detail-text {
         top: 0;
         transform: none;
@@ -880,6 +876,24 @@ img.crowdsale-img {
     }
 }
 @media screen and (max-width: 767px){
+    .popup-content .popup-container-detail {
+        padding: 10px 30px;
+    }
+    .popup-content .popup-container-detail > h1 {
+        font-size: 28px;
+    }
+    .popup-content .popup-container-detail > p {
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 25px;
+    }
+    .popup-content {
+        overflow: scroll;
+    }
+    
+    .popup-close {
+        padding: 10px 25px;
+    }
     span.popup-title.blue,   span.popup-title.black {
         font-size: 50px;
     }
@@ -969,6 +983,10 @@ img.crowdsale-img {
     }
 }
 @media screen and (max-width: 540px){
+    
+    .popup-content .popup-container-detail {
+        padding: 10px 20px;
+    }
     .popup-title.bg2, p.popup-desc-sec {
         max-width: 100%;
         width: 100%;

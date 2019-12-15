@@ -300,6 +300,14 @@ span.line1 span:after{
 span.line2 span:after{
     bottom:15vh;
 }
+.popup-container-detail {
+    padding: 50px;
+}
+.popup-container-detail > p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
 @media screen and (max-width: 1399px){
     .page-body {
         min-height: auto;

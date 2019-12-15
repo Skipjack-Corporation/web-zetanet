@@ -23,6 +23,7 @@ class Landing extends React.Component {
   }
  
   close = event => {
+    console.log("a");
     document.body.classList.remove('popup-open');
     this.setState({ closePopup: !this.state.closePopup });
   };
@@ -34,7 +35,6 @@ class Landing extends React.Component {
     d.setTime(d.getTime() + (60*60*1000));
     const cookies = new Cookies();
 
-    document.body.classList.remove('no-scroll');
 
     const Content = ({ children }) => <div className="content">{children}</div>;
 
@@ -52,60 +52,20 @@ class Landing extends React.Component {
         <Team data={this.myDivToFocusTeam} />
         <Contact data={this.myDivToFocusContact} />
         <Footer />
-{/*         
-        {cookies.get('onboarded') !== "true" ? 
+       
         <div className='pop-event'>
-              {cookies.set("onboarded", "true",  {path: "/", expires: d})}
               <div className={this.state.closePopup === true ? 'hide' : 'advertisment-open'}></div>
               <div className={this.state.closePopup === true ? 'hide' : 'advertisment-news'}>
                 <div className="popup-close" onClick={this.close}>x</div>
                 <div className="popup-content">
-                  <div className="popup-detail">
-                    <img src='./images/popup-bg1.jpg' className='popup-bg-detail'></img>
-                    <div className='popup-detail-text'>
-                      <div className='popup-title '>
-                        <span>Meet us in  </span>
-                        <span>Web Summit <span className='blue'>2019</span></span>
-                      </div>
-                      <p className="popup-desc">
-                        Meet the world leading companies joining us at Web summit 2019. <br/>
-                        On November 4-7, 2019 <br/> at Altice Arena & Fil, Lisbon
-                      </p>
-                      <div className="btn-blue" onClick={this.close}>
-                        <a href="https://websummit.com/event-partners" target="_blank">
-                          Show More
-                        </a>
-                        <span></span>
-                      </div>
+                    <div class="popup-container-detail">
+                    <h1><strong>Announcement! </strong></h1>
+                    <p>We have migrated the ZTN trading from bobi.io to <strong><a href="https://waves.exchange" target="_blank">https://waves.exchange</a></strong> for more currency pairing. all ZTN holders are eligible to trade the ZETASPACE token. please send us an email at <strong>support@zetaspace.io</strong> to so we can send the corresponding amount of your token to your WAVES account. we will send more details in the email.</p>
+                    <p>ZETASPACE is blockchain base storage solution design to let nodes or participants of the network to earn by leasing their free storage on their computers and mobile devices. the technology is design to let the subscriber of the blockchain base storage solution to have a faster download speed of their stored data, more secured and reliable storage and to have the confidence that big companies aren't monetizing from their own personal data. all of this has been made possible with extensive research and development of Skipjack Pte. Ltd development team. the prototype is already been released in GitHub and already under extensive testing before releasing for public commercial use in February. <a href=" https://github.com/Skipjack-Corporation" target="_blank">https://github.com/Skipjack-Corporation</a>, <a href="https://www.zetaspace.io" target="_blank">https://www.zetaspace.io</a>, <a href="https://corp.zetaspace.io" target="_blank">https://corp.zetaspace.io</a></p>
                     </div>
-                  </div>
-                  <div className="popup-detail">
-                    <img src='./images/popup-bg2.jpg' className='popup-bg-detail'></img>
-                    <div className='popup-detail-text'>
-                      <div className='popup-title bg2'>
-                        <img src='./images/trescon-wbs.jpg'></img>
-                        <span>World Blockchain Summit</span>
-                      </div>
-                      <p className="popup-desc-sec">
-                        <span className='popup-date'>
-                          23 - 24 <span>OCT 2019</span>
-                        </span>
-                        <span className='popup-address'>
-                          Jumeirah Emirates Towers, Dubai
-                        </span>
-                      </p>
-                      <div className="btn-blue" onClick={this.close}>
-                        <a href="https://dubai.worldblockchainsummit.com" target="_blank">
-                          Show More
-                        </a>
-                        <span></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                 </div>
               </div>
           </div>
-        : document.body.classList.remove('popup-open')} */}
 
       </Content>
     );
