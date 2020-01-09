@@ -74,7 +74,7 @@ class Team extends React.Component{
                                 <p className="display-position">Chief Technology Officer</p>
                             </span>
                         </li>
-                        <li>
+                        {/* <li>
                             <div className="flip-box">
                                 <span className="display-img flip-box-inner">
                                     <div className="flip-box-front">
@@ -95,7 +95,7 @@ class Team extends React.Component{
                                 <p className="display-name">Adem Fidan</p>
                                 <p className="display-position">Chief Finance Officer</p>
                             </span>
-                        </li>
+                        </li> */}
                         <li>
                             <div className="flip-box">
                                 <span className="display-img flip-box-inner">
